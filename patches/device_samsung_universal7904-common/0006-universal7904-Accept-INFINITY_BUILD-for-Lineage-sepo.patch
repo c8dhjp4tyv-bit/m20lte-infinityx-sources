@@ -1,0 +1,26 @@
+From 7e689bf66671582e6b35cbdbdca2592b3f16080a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Umut=20=C3=87a=C4=9Fan=20Demirer?= <umutcagand@protonmail.com>
+Date: Thu, 19 Nov 2026 18:42:09 +0000
+Subject: [PATCH 6/6] universal7904: Accept INFINITY_BUILD for Lineage sepolicy
+ (local)
+
+---
+ BoardConfigCommon.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/BoardConfigCommon.mk b/BoardConfigCommon.mk
+index f1e0823..3206dd4 100644
+--- a/BoardConfigCommon.mk
++++ b/BoardConfigCommon.mk
+@@ -102,7 +102,7 @@ BOARD_HAS_DOWNLOAD_MODE := true
+ ENABLE_VENDOR_RIL_SERVICE := true
+ 
+ # Sepolicy
+-ifneq ($(LINEAGE_BUILD),)
++ifneq ($(LINEAGE_BUILD)$(INFINITY_BUILD),)
+ include device/lineage/sepolicy/exynos/sepolicy.mk
+ include device/lineage/sepolicy/libion/sepolicy.mk
+ endif
+-- 
+2.43.0
+

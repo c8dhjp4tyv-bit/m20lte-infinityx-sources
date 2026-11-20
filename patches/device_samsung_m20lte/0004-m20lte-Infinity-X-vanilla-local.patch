@@ -1,0 +1,25 @@
+From c7edc8d398d8f255d62477f011cf141ee393bced Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Umut=20=C3=87a=C4=9Fan=20Demirer?= <umutcagand@protonmail.com>
+Date: Thu, 19 Nov 2026 19:38:57 +0000
+Subject: [PATCH 4/4] m20lte: Infinity X vanilla (local)
+
+---
+ lineage_m20lte.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lineage_m20lte.mk b/lineage_m20lte.mk
+index 302150a..61ff946 100644
+--- a/lineage_m20lte.mk
++++ b/lineage_m20lte.mk
+@@ -8,7 +8,7 @@ PRODUCT_NAME := lineage_m20lte
+ # Infinity X
+ INFINITY_MAINTAINER := "umutcagand"
+ TARGET_HAS_UDFPS := false
+-WITH_GAPPS := true
++WITH_GAPPS := false
+ 
+ PRODUCT_SYSTEM_PROPERTIES += \
+     ro.product.marketname=Galaxy M20 \
+-- 
+2.43.0
+
